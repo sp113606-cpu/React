@@ -1,0 +1,14 @@
+#footer-parent{
+    display: flex;
+    position: sticky;
+    bottom: 0px;
+    flex-direction: row;
+}
+.footer-child{
+    display: flex;
+}
+.footer-child li{
+    list-style: none;
+    display: flex;
+    font-weight: border;
+}
