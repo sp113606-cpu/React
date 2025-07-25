@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import { userDataContext } from '../context/UserContext';
+import About from './About';
 
 
 function NavBar() {
@@ -31,8 +32,13 @@ function NavBar() {
                   <span className="visually-hidden">(current)</span></NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link active" to="/counter" aria-current="page"
+                <NavLink className="nav-link active" to="/Counter" aria-current="page"
                 >Counter Page
+                  <span className="visually-hidden">(current)</span></NavLink>
+              </li>
+               <li className="nav-item">
+                <NavLink className="nav-link active" to="/memo" aria-current="page"
+                >Memo
                   <span className="visually-hidden">(current)</span></NavLink>
               </li>
               <li className="nav-item">
@@ -93,9 +99,10 @@ function NavBar() {
         </div>
       </nav>
       <Outlet />
+      <About />
 
     </>
-  )
+  );
 }
 
 export default NavBar;

@@ -8,7 +8,7 @@ import Login from './Components/Login';
 import Counter from './Components/Counter';
 import NewCounter from './Components/NewCounter';
 import UseOfMemo from './Components/UseOfMemo';
-
+import Errorbaundry from './Components/Errorboundry';
 function App() {
   let router = createBrowserRouter([
     {
@@ -77,7 +77,10 @@ function App() {
       element: (
         <>
           <NavBar />
+          <Errorbaundry>
+
           <Counter />
+          </Errorbaundry>
           <Footer />
         </>
       )

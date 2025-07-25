@@ -10,6 +10,9 @@ export class Counter extends Component {
   }
   
   render() {
+    if (this.state.count == 15) {
+      throw new Error ("counter reached 15 !");
+    }
     return (
       <>
         <div className="counter-parent">

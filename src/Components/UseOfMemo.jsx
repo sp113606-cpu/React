@@ -14,8 +14,8 @@ function UseOfMemo() {
             <div className="counter-parent">
                 <Greet name="Shivani"/>
                 <Greet name="Shivani"/>
-                <Greet name="Shivani"/>
-                <Greet name="Harshid"/>
+                <Greet name="krish"/>
+                <Greet name="Harshil"/>
                   <Greet name="Sunita"/>
             </div>
         </div>
